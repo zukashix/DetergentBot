@@ -1,0 +1,4 @@
+lyricsgenius
+requests
+discord.py
+fuzzysearch
