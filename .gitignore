@@ -1,0 +1,4 @@
+assets/keys.json
+cogs/__pycache__/
+lib/__pycache__/
+test/
