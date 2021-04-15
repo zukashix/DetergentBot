@@ -3,15 +3,16 @@ import json
 import random
 import requests
 import sys
+import os
 
 from fuzzysearch import find_near_matches
 import lyricsgenius as lg
 
-lyricapis = lg.Genius(json.load(open('.\\assets\\keys.json', 'r'))['LYRICSGENIUS_API_KEY'], skip_non_songs=True, excluded_terms=["(Remix)", "(Live)"], remove_section_headers=True)
+lyricapis = lg.Genius(os.environ['LYRICSGENIUS_API_KEY'], skip_non_songs=True, excluded_terms=["(Remix)", "(Live)"], remove_section_headers=True)
 
 # Client Keys
-CLIENT_ID = json.load(open('.\\assets\\keys.json', 'r'))['SPOTIFY_CLIENT_ID']
-CLIENT_SECRET = json.load(open('.\\assets\\keys.json', 'r'))['SPOTIFY_CLIENT_SECRET']
+CLIENT_ID = os.environ['SPOTIFY_CLIENT_ID']
+CLIENT_SECRET = os.environ['SPOTIFY_CLIENT_SECRET']
 
 # Spotify API URIs
 SPOTIFY_TOKEN_URL = "https://accounts.spotify.com/api/token"
