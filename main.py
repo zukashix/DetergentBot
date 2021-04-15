@@ -4,8 +4,9 @@ from discord.ext import commands
 import discord
 import json
 from pretty_help import PrettyHelp
+import os
 
-prefixes = json.load(open('.\\assets\\keys.json', 'r'))['PREFIXES']
+prefixes = os.environ['PREFIXES']
 print("debug: INFO: Setting up bot . . . /")
 bot = commands.Bot(command_prefix = prefixes, help_command=PrettyHelp())
 
@@ -28,5 +29,5 @@ async def on_ready():
 
 
 print('debug: RUN: Connecting to discordapp.com:443 (Running client token) . . . /')
-bot.run(json.load(open('.\\assets\\keys.json', 'r'))['DISCORD_BOT_TOKEN'])
+bot.run(os.environ['DISCORD_BOT_TOKEN'])
 print('debug: INFO: bot.run success . . . /')
