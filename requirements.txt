@@ -2,3 +2,4 @@ lyricsgenius
 requests
 discord.py
 fuzzysearch
+discord-pretty-help
