@@ -72,11 +72,10 @@ def return_song():
     access_token = __get_token()
     
     try:
-        with open('.\\assets\\genres.json', 'r') as infile:
+        with open('./assets/genres.json', 'r') as infile:
             valid_genres = json.load(infile)
     except FileNotFoundError:
         print("Couldn't find genres file!")
-        sys.exit(1)
 
     if n_args == 0:
         selected_genre = random.choice(valid_genres)
