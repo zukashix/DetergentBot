@@ -13,7 +13,7 @@ Change the `runtime.txt` file to the version of python you want to use (python 3
 
 Create a new python app on `dashboard.heroku.com` <br />
 
-Setup the config vars on heroku, the one you'll need to configure are present in `DetergentBot/assets/keys.json` <br />
+Setup the config vars on heroku, the one you'll need to configure are present in `DetergentBot/keys.json` <br />
 
 Connect to github on your app's deploy page and turn on your dynos, then finally deploy! <br />
 
