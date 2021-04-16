@@ -6,7 +6,7 @@ import datetime
 import os
 
 class ExceptionHandler(commands.Cog):
-    """This cog handles runtime errors"""
+    """Ignore. This cog handles runtime errors"""
 
     def __init__(self, bot):
         self.bot = bot
