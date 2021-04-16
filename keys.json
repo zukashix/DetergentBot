@@ -1,0 +1,8 @@
+{
+    "DISCORD_BOT_TOKEN": "your bot token (used in ../main.py)",
+    "LYRICSGENIUS_API_KEY": "your lyricsgenius api token (used in ../lib/gtb_api.py)",
+    "SPOTIFY_CLIENT_ID": "your spotify client id (used in ../lib/gtb_api.py)",
+    "SPOTIFY_CLIENT_SECRET": "your spotify client secret (used in ../lib/gtb_api.py)",
+    "PREFIXES": ["list", "of", "prefixes", "or a single string containing one prefix", "used in ../main.py"],
+    "ERROR_WEBHOOK": "discord webhook link to which the bot will post errors (used in ../cogs/errorHandler.py)"
+}
