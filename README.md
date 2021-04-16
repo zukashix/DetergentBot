@@ -19,5 +19,5 @@ Connect to github on your app's deploy page and turn on your dynos, then finally
 
 ## Credits
 
-The bot uses [this](https://github.com/ZipBomb/spotify-song-suggestion/) repository to find random songs on spotify for the GuessTheMusic game. <br />
+The bot uses [this](https://github.com/ZipBomb/spotify-song-suggestion/) repository's code to find random songs on spotify for the GuessTheMusic game. <br />
 Big thanks to [Pablo Rey](https://github.com/ZipBomb/) for making this available!
