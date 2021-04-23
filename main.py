@@ -6,7 +6,7 @@ import json
 from pretty_help import PrettyHelp
 import os
 
-prefixes = os.environ['PREFIXES']
+prefixes = "rb "
 print("debug: INFO: Setting up bot . . . /")
 bot = commands.Bot(command_prefix = prefixes, help_command=PrettyHelp())
 
