@@ -26,7 +26,7 @@ class ExceptionHandler(commands.Cog):
             timestamp = str(datetime.datetime.utcnow())
             await ctx.send('An internal error occurred! We are very sorry.\nPease DM the following to `Zukashi#7071`:')
             await ctx.send('`DPY-002_{}`'.format(timestamp))
-            msg = 'DPY-001_{}\n```{}```'.format(timestamp, tbctext)
+            msg = 'DPY-002_{}\n```{}```'.format(timestamp, tbctext)
             data = {
                 'content': msg
             }
