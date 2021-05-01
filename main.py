@@ -14,7 +14,8 @@ print("debug: INFO: Loading Cogs . . . /")
 initial_extensions = [
     'cogs.guess_music',
     'cogs.debug',
-    'cogs.errorHandler'
+    'cogs.errorHandler',
+    'cogs.utils'
 ]
 
 if __name__ == '__main__':
