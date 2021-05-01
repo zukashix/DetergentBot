@@ -7,7 +7,7 @@ class Utilities(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @bot.command(name='clear', aliases=['cls'], brief='Clears messages', description='Clears a specified amount of messages. Takes no big than 100 messages at once.')
+    @commands.command(name='clear', aliases=['cls'], brief='Clears messages', description='Clears a specified amount of messages. Takes no big than 100 messages at once.')
     @has_permissions(manage_messages=True)
     async def clear(self, ctx, amt):
         try:
