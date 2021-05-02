@@ -2,7 +2,7 @@ from discord.ext import commands
 from discord.ext.commands import has_permissions, CheckFailure
 from asyncio import sleep 
 
-class Utilities(commands.Cog):
+class Utilities(commands.Cog, name="Utilities"):
     """Utilities, mostly moderation"""
     def __init__(self, bot):
         self.bot = bot
@@ -38,7 +38,7 @@ class Utilities(commands.Cog):
             await msgsent.delete()
 
     @clear.error
-    async def clear_error(self, error, ctx):
+    async def clear_error(self, ctx, error):
         if isinstance(error, CheckFailure):
             await ctx.send(ctx.message.channel, "Looks like you don't have the `manage_messages` permission.")
 
