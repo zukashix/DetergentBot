@@ -2,7 +2,7 @@ from lib import gtb_api as gtba
 from discord.ext import commands, tasks
 import asyncio
 
-class Games(commands.Cog, name='Games'):
+class Games(commands.Cog, name='games'):
     """Fun games to play with the bot!"""
     def __init__(self, bot):
         self.bot = bot
