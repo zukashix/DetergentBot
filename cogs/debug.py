@@ -3,8 +3,8 @@ from sys import version_info as pyv
 from discord import __version__ as dcv
 from lyricsgenius import __version__ as lgv
 
-class Utilities(commands.Cog, name='Utilities'):
-    """Utility commands to know/operate the bot!!"""
+class About(commands.Cog, name='About'):
+    """Commands to know/operate the bot!!"""
     def __init__(self, bot):
         self.bot = bot
 
@@ -18,4 +18,4 @@ class Utilities(commands.Cog, name='Utilities'):
             await ctx.send("```\nPython {}.{}.{}\n---------------\nDiscord.py v{}\n---------------\nLyricGenius v{}\n---------------\nPing: {}ms```".format(pyv.major, pyv.minor, pyv.micro, dcv, lgv, int(self.bot.latency * 1000)))
 
 def setup(bot):
-    bot.add_cog(Utilities(bot))
+    bot.add_cog(About(bot))
