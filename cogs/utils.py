@@ -2,7 +2,7 @@ from discord.ext import commands
 from discord.ext.commands import has_permissions, CheckFailure
 from asyncio import sleep 
 
-class Utilities(commands.Cog, name="Utilities"):
+class Utilities(commands.Cog, name="utilities"):
     """Utilities, mostly moderation"""
     def __init__(self, bot):
         self.bot = bot
