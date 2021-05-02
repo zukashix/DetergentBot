@@ -3,7 +3,7 @@ from sys import version_info as pyv
 from discord import __version__ as dcv
 from lyricsgenius import __version__ as lgv
 
-class About(commands.Cog, name='About'):
+class About(commands.Cog, name='about'):
     """Commands to know/operate the bot!!"""
     def __init__(self, bot):
         self.bot = bot
